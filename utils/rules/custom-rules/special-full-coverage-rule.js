@@ -2,7 +2,7 @@ const { Rule } = require('../rule');
 
 class SpecialFullCoverageRule extends Rule {
 
-    constructor() { }
+    constructor() { super(); }
 
     calculatePrice(sellIn, price) {
         if (sellIn > 0) return price -= 1;

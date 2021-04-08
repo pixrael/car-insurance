@@ -2,7 +2,7 @@ const { Rule } = require('../rule');
 
 class SuperSaleRule extends Rule {
 
-    constructor() { }
+    constructor() { super(); }
 
     calculatePrice(sellIn, price) {
         if (sellIn > 10) return price += 1;

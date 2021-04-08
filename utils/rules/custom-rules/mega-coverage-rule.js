@@ -2,9 +2,9 @@ const { Rule } = require('../rule');
 
 class MegaCoverageRule extends Rule {
 
-    constructor() { }
+    constructor() { super(); }
 
-    calculateSellIn(sellIn){
+    calculateSellIn(sellIn) {
         return sellIn;
     }
 
