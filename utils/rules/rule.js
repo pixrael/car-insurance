@@ -1,8 +1,8 @@
 class Rule {
-    constructor() {}
+    constructor() { }
 
-    calculateSellIn(sellIn){
-        return sellIn--;
+    calculateSellIn(sellIn) {
+        return --sellIn;
     }
 
     calculatePrice(sellIn, price) {
