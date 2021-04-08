@@ -1,0 +1,12 @@
+{
+  "name": "car-insurance",
+  "version": "1.0.0",
+  "description": "Server that calculates the price of products depending on types and days",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
