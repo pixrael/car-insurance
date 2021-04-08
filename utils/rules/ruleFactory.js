@@ -4,22 +4,27 @@ const { MegaCoverageRule } = require('./custom-rules/mega-coverage-rule');
 const { SpecialFullCoverageRule } = require('./custom-rules/special-full-coverage-rule');
 const { SuperSaleRule } = require('./custom-rules/super-sale-rule');
 
+const { FULL_COVERAGE,
+    MEGA_COVERAGE,
+    SPECIAL_FULL_COVERAGE,
+    SUPER_SALE } = require('./types');
+
 
 class RuleFactory {
     constructor() { }
 
     getRuleInstace(type = '') {
         switch (type) {
-            case 'Full Coverage': {
+            case FULL_COVERAGE: {
                 return new FullCoverageRule();
             }
-            case 'Mega Coverage': {
+            case MEGA_COVERAGE: {
                 return new MegaCoverageRule();
             }
-            case 'Special Full Coverage': {
+            case SPECIAL_FULL_COVERAGE: {
                 return new SpecialFullCoverageRule();
             }
-            case 'Super Sale': {
+            case SUPER_SALE: {
                 return new SuperSaleRule();
             }
             default: {
