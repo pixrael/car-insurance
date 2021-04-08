@@ -4,7 +4,7 @@
   "description": "Server that calculates the price of products depending on types and days",
   "main": "server.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha test/**/*.js",
     "runDev": "nodemon server.js"
   },
   "keywords": [],

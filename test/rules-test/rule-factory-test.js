@@ -1,15 +1,15 @@
 const assert = require('assert');
-const { Rule } = require('../utils/rules/rule')
-const { RuleFactory } = require('../utils/rules/ruleFactory');
-const { FullCoverageRule } = require('../utils/rules/custom-rules/full-coverage-rule');
-const { MegaCoverageRule } = require('../utils/rules/custom-rules/mega-coverage-rule');
-const { SpecialFullCoverageRule } = require('../utils/rules/custom-rules/special-full-coverage-rule');
-const { SuperSaleRule } = require('../utils/rules/custom-rules/super-sale-rule');
+const { Rule } = require('../../utils/rules/rule')
+const { RuleFactory } = require('../../utils/rules/ruleFactory');
+const { FullCoverageRule } = require('../../utils/rules/custom-rules/full-coverage-rule');
+const { MegaCoverageRule } = require('../../utils/rules/custom-rules/mega-coverage-rule');
+const { SpecialFullCoverageRule } = require('../../utils/rules/custom-rules/special-full-coverage-rule');
+const { SuperSaleRule } = require('../../utils/rules/custom-rules/super-sale-rule');
 
 const { FULL_COVERAGE,
     MEGA_COVERAGE,
     SPECIAL_FULL_COVERAGE,
-    SUPER_SALE } = require('../utils/rules/types');
+    SUPER_SALE } = require('../../utils/rules/types');
 
 
 describe('Rule Factory |', function () {
