@@ -5,8 +5,8 @@ class SuperSaleRule extends Rule {
     constructor() { super(); }
 
     calculatePrice(sellIn, price) {
-        if (sellIn > 0) return price -= 1;
-        return price -= 2;
+        if (sellIn > 0) return this.limitPrice(price -= 1);
+        return this.limitPrice(price -= 2);
     }
 }
 

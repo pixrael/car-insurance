@@ -1,5 +1,9 @@
 class Rule {
-    constructor() { }
+    maxPriceAllowed;
+
+    constructor(maxPriceAllowed = 50) {
+        this.maxPriceAllowed = maxPriceAllowed;
+    }
 
     calculateSellIn(sellIn) {
         return --sellIn;
@@ -7,8 +11,12 @@ class Rule {
 
     calculatePrice(sellIn, price) {
 
-        if (sellIn > 0) return price -= 1;
-        return price -= 2;
+        if (sellIn > 0) return this.limitPrice(price -= 1);
+        return this.limitPrice(price -= 2);
+    }
+
+    limitPrice(price) {
+        return price <= this.maxPriceAllowed ? price : this.maxPriceAllowed;
     }
 }
 

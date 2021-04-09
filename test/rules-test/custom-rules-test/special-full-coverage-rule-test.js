@@ -37,8 +37,8 @@ describe('Special Full Coverage Rule |', function () {
             assert.strictEqual(price, 14);
 
             ///
-            price = specialFullCoverageRule.calculatePrice(6, 80);
-            assert.strictEqual(price, 82);
+            price = specialFullCoverageRule.calculatePrice(6, 16);
+            assert.strictEqual(price, 18);
 
         });
 
@@ -50,12 +50,12 @@ describe('Special Full Coverage Rule |', function () {
             assert.strictEqual(price, 15);
 
             ///
-            price = specialFullCoverageRule.calculatePrice(5, 80);
-            assert.strictEqual(price, 83);
+            price = specialFullCoverageRule.calculatePrice(5, 47);
+            assert.strictEqual(price, 50);
 
             ///
-            price = specialFullCoverageRule.calculatePrice(3, 100);
-            assert.strictEqual(price, 103);
+            price = specialFullCoverageRule.calculatePrice(3, 13);
+            assert.strictEqual(price, 16);
 
         });
 
@@ -64,16 +64,33 @@ describe('Special Full Coverage Rule |', function () {
 
             const specialFullCoverageRule = new SpecialFullCoverageRule();
             ///
-            let price = specialFullCoverageRule.calculatePrice(0, 500);
+            let price = specialFullCoverageRule.calculatePrice(0, 50);
             assert.strictEqual(price, 0);
 
             ///
-            price = specialFullCoverageRule.calculatePrice(-1, 80);
+            price = specialFullCoverageRule.calculatePrice(-1, 37);
             assert.strictEqual(price, 0);
 
             ///
-            price = specialFullCoverageRule.calculatePrice(-3, 100);
+            price = specialFullCoverageRule.calculatePrice(-3, 22);
             assert.strictEqual(price, 0);
+
+        });
+
+        it('should return the top max price if the price is more than 50 and there still days pendings', function () {
+
+            const specialFullCoverageRule = new SpecialFullCoverageRule();
+            ///
+            let price = specialFullCoverageRule.calculatePrice(10, 50);
+            assert.strictEqual(price, 50);
+
+            ///
+            price = specialFullCoverageRule.calculatePrice(8, 80);
+            assert.strictEqual(price, 50);
+
+            ///
+            price = specialFullCoverageRule.calculatePrice(5, 51);
+            assert.strictEqual(price, 50);
 
         });
 
