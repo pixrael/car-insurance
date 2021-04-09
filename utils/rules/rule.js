@@ -16,6 +16,9 @@ class Rule {
     }
 
     limitPrice(price) {
+
+        price = price < 0 ? 0 : price;
+
         return price <= this.maxPriceAllowed ? price : this.maxPriceAllowed;
     }
 }

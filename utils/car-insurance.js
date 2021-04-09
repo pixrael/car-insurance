@@ -1,15 +1,21 @@
+const { RuleFactory } = require('./rules/ruleFactory');
+
 class CarInsurance {
+
+    ruleFactory;
+
     constructor(products = []) {
         this.products = products;
+        this.ruleFactory = new RuleFactory();
     }
     updatePrice() {
 
-        this.products.filter(product => product.sellIn > 0).forEach(product => {
-            product.sellIn--;
+        this.products.forEach(product => {
 
-            if (product.sellIn === 0) { // just expired
-                product.price = product.price / 2;
-            }
+            const rule = this.ruleFactory.getRuleInstace(product.name);
+
+            product.price = rule.calculatePrice(product.sellIn, product.price);
+            product.sellIn = rule.calculateSellIn(product.sellIn);
 
         });
 

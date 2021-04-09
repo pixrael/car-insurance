@@ -1,0 +1,357 @@
+[
+    {
+      "name": "Medium Coverage",
+      "sellIn": "10",
+      "price": "20"
+    },
+    {
+      "name": "Full Coverage",
+      "sellIn": "2",
+      "price": "0"
+    },
+    {
+      "name": "Low Coverage",
+      "sellIn": "5",
+      "price": "7"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "0",
+      "price": "80"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "-1",
+      "price": "80"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "15",
+      "price": "20"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "10",
+      "price": "49"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "5",
+      "price": "49"
+    },
+    {
+      "name": "Super Sale",
+      "sellIn": "3",
+      "price": "6"
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "name",
+      "sellIn": "sellIn",
+      "price": "price"
+    },
+    {
+      "name": "Medium Coverage",
+      "sellIn": "9",
+      "price": "19"
+    },
+    {
+      "name": "Full Coverage",
+      "sellIn": "1",
+      "price": "1"
+    },
+    {
+      "name": "Low Coverage",
+      "sellIn": "4",
+      "price": "6"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "0",
+      "price": "80"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "-1",
+      "price": "80"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "14",
+      "price": "21"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "9",
+      "price": "50"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "4",
+      "price": "50"
+    },
+    {
+      "name": "Super Sale",
+      "sellIn": "2",
+      "price": "5"
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "name",
+      "sellIn": "sellIn",
+      "price": "price"
+    },
+    {
+      "name": "Medium Coverage",
+      "sellIn": "8",
+      "price": "18"
+    },
+    {
+      "name": "Full Coverage",
+      "sellIn": "0",
+      "price": "2"
+    },
+    {
+      "name": "Low Coverage",
+      "sellIn": "3",
+      "price": "5"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "0",
+      "price": "80"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "-1",
+      "price": "80"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "13",
+      "price": "22"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "8",
+      "price": "50"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "3",
+      "price": "50"
+    },
+    {
+      "name": "Super Sale",
+      "sellIn": "1",
+      "price": "4"
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "name",
+      "sellIn": "sellIn",
+      "price": "price"
+    },
+    {
+      "name": "Medium Coverage",
+      "sellIn": "7",
+      "price": "17"
+    },
+    {
+      "name": "Full Coverage",
+      "sellIn": "-1",
+      "price": "4"
+    },
+    {
+      "name": "Low Coverage",
+      "sellIn": "2",
+      "price": "4"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "0",
+      "price": "80"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "-1",
+      "price": "80"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "12",
+      "price": "23"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "7",
+      "price": "50"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "2",
+      "price": "50"
+    },
+    {
+      "name": "Super Sale",
+      "sellIn": "0",
+      "price": "3"
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "name",
+      "sellIn": "sellIn",
+      "price": "price"
+    },
+    {
+      "name": "Medium Coverage",
+      "sellIn": "6",
+      "price": "16"
+    },
+    {
+      "name": "Full Coverage",
+      "sellIn": "-2",
+      "price": "6"
+    },
+    {
+      "name": "Low Coverage",
+      "sellIn": "1",
+      "price": "3"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "0",
+      "price": "80"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "-1",
+      "price": "80"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "11",
+      "price": "24"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "6",
+      "price": "50"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "1",
+      "price": "50"
+    },
+    {
+      "name": "Super Sale",
+      "sellIn": "-1",
+      "price": "1"
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "name",
+      "sellIn": "sellIn",
+      "price": "price"
+    },
+    {
+      "name": "Medium Coverage",
+      "sellIn": "5",
+      "price": "15"
+    },
+    {
+      "name": "Full Coverage",
+      "sellIn": "-3",
+      "price": "8"
+    },
+    {
+      "name": "Low Coverage",
+      "sellIn": "0",
+      "price": "2"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "0",
+      "price": "80"
+    },
+    {
+      "name": "Mega Coverage",
+      "sellIn": "-1",
+      "price": "80"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "10",
+      "price": "25"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "5",
+      "price": "50"
+    },
+    {
+      "name": "Special Full Coverage",
+      "sellIn": "0",
+      "price": "50"
+    },
+    {
+      "name": "Super Sale",
+      "sellIn": "-2",
+      "price": "0"
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    },
+    {
+      "name": "",
+      "sellIn": "",
+      "price": ""
+    }
+   ]

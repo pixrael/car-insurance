@@ -40,8 +40,8 @@ describe('Product importer |', function () {
             const products = importProductsFromJSON(dirtyProductData);
 
             const expectedProducts = [
-                new Product('Medium Coverage', '10', '20'),
-                new Product('Full Coverage', '2', '0')
+                new Product('Medium Coverage', 10, 20),
+                new Product('Full Coverage', 2, 0)
             ];
 
             assert.deepStrictEqual(products, expectedProducts);
@@ -53,12 +53,12 @@ describe('Product importer |', function () {
             const records = importProductsFromJSON(products2daysRecord);
 
             const expectedProducts = [
-                new Product('Medium Coverage', '10', '20'),
-                new Product('Full Coverage', '2', '0'),
-                new Product('Medium Coverage', '9', '19'),
-                new Product('Full Coverage', '1', '1'),
-                new Product('Medium Coverage', '8', '18'),
-                new Product('Full Coverage', '0', '2')
+                new Product('Medium Coverage', 10, 20),
+                new Product('Full Coverage', 2, 0),
+                new Product('Medium Coverage', 9, 19),
+                new Product('Full Coverage', 1, 1),
+                new Product('Medium Coverage', 8, 18),
+                new Product('Full Coverage', 0, 2)
             ];
 
             assert.deepStrictEqual(records, expectedProducts);
