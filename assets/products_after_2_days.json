@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Medium Coverage",
+    "sellIn": "10",
+    "price": "20"
+  },
+  {
+    "name": "Full Coverage",
+    "sellIn": "2",
+    "price": "0"
+  },
+  {
+    "name": "",
+    "sellIn": "",
+    "price": ""
+  },
+  {
+    "name": "",
+    "sellIn": "",
+    "price": ""
+  },
+  {
+    "name": "name",
+    "sellIn": "sellIn",
+    "price": "price"
+  },
+  {
+    "name": "Medium Coverage",
+    "sellIn": "9",
+    "price": "19"
+  },
+  {
+    "name": "Full Coverage",
+    "sellIn": "1",
+    "price": "1"
+  },
+  {
+    "name": "",
+    "sellIn": "",
+    "price": ""
+  },
+  {
+    "name": "",
+    "sellIn": "",
+    "price": ""
+  },
+  {
+    "name": "name",
+    "sellIn": "sellIn",
+    "price": "price"
+  },
+  {
+    "name": "Medium Coverage",
+    "sellIn": "8",
+    "price": "18"
+  },
+  {
+    "name": "Full Coverage",
+    "sellIn": "0",
+    "price": "2"
+  },
+  {
+    "name": "",
+    "sellIn": "",
+    "price": ""
+  },
+  {
+    "name": "",
+    "sellIn": "",
+    "price": ""
+  }
+]
