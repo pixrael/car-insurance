@@ -1,7 +1,7 @@
 const assert = require('assert');
 const { Product } = require('../utils/product');
 const { CarInsurance } = require('../utils/car-insurance');
-const { importProductsFromJSON, importProductsFromJSONFilterByNameProduct } = require('../utils/helpers.js/product-importer');
+const { importProductsFromJSON, importProductsFromJSONFilterByNameProduct } = require('../utils/helpers/product-importer');
 
 const productsAfter30Days = require('../assets/products_after_30_days.json');
 const productsAfter5Days = require('../assets/products_after_5_days.json');

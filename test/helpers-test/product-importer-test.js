@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const { importProductsFromJSON } = require('../../utils/helpers.js/product-importer');
+const { importProductsFromJSON } = require('../../utils/helpers/product-importer');
 const { Product } = require('../../utils/product');
 
 const products2daysRecord = require('../../assets/products_after_2_days.json');
