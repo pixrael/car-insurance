@@ -1,12 +1,17 @@
 const { RuleFactory } = require('./rules/ruleFactory');
+const { Product } = require('./product');
 
 class CarInsurance {
-
+    products;
     ruleFactory;
 
     constructor(products = []) {
         this.products = products;
         this.ruleFactory = new RuleFactory();
+    }
+
+    setProducts(products) {
+        this.products = products;
     }
     updatePrice() {
 
@@ -20,6 +25,10 @@ class CarInsurance {
         });
 
         return this.products;
+    }
+
+    getCurrentStateProducts() {
+        return this.products.map(product => new Product(product.name, product.sellIn, product.price));
     }
 }
 
