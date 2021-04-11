@@ -7,7 +7,7 @@ function formatToRawString(productsDayZero, productStatesInDays) {
 
 
     for (let i = 0; i < nDays; i++) {
-
+        result += `-------- day ${i} --------\r\n`;
     }
 
 

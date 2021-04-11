@@ -13,4 +13,3 @@ Full Coverage, 1, 1
 name, sellIn, price
 Medium Coverage, 8, 18
 Full Coverage, 0, 2
-Low Coverage, 3, 5
