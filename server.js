@@ -5,7 +5,7 @@ const path = require('path');
 const { Product } = require('./utils/product');
 const { CarInsurance } = require('./utils/car-insurance');
 const carInsurance = new CarInsurance();
-const { formatToRawString } = require('./utils/helpers/product-formatter');
+const { formatToRawString, formatToResultWithDays } = require('./utils/helpers/product-formatter');
 
 const { getProductsResultFromSimulation } = require('./utils/simulator');
 
@@ -28,9 +28,12 @@ app.post('/simulation', (req, res) => {
 
     const productsFromSimulation = getProductsResultFromSimulation(days, carInsurance);
 
-    const rawStringResult = formatToRawString(productsObject,productsFromSimulation);
+    const rawStringResult = formatToRawString(productsObject, productsFromSimulation);
 
-    res.json({ products: [], 'raw-result': rawStringResult });
+    const resultWithDays = formatToResultWithDays(productsObject, productsFromSimulation);
+
+
+    res.json({ result: resultWithDays, 'raw-result': rawStringResult });
 });
 
 const PORT = 3000 || process.env.PORT;

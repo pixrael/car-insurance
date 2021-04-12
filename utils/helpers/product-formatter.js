@@ -23,7 +23,7 @@ function formatToRawString(productsDayZero, productStatesInDays) {
     return result;
 }
 
-function formatToJson(productsDayZero, productStatesInDays) {
+function formatToResultWithDays(productsDayZero, productStatesInDays) {
 
     const result = {
         title: 'OMGHAI!',
@@ -75,9 +75,9 @@ function formatToJson(productsDayZero, productStatesInDays) {
 
     }
 
-    return JSON.stringify(result);
+    return result;
 }
 
 
 
-module.exports = { formatToRawString, formatToJson };
+module.exports = { formatToRawString, formatToResultWithDays };

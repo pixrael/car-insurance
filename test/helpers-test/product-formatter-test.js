@@ -1,7 +1,7 @@
 const assert = require('assert');
 const fs = require('fs');
 
-const { formatToRawString, formatToJson } = require('../../utils/helpers/product-formatter');
+const { formatToRawString, formatToResultWithDays } = require('../../utils/helpers/product-formatter');
 
 const { Product } = require('../../utils/product');
 
@@ -46,9 +46,9 @@ describe('Products result formater |', function () {
                 new Product('Full Coverage', 0, 2)
             ];
 
-            const result = formatToJson(productsDayZero, productStatesInDays);
+            const result = formatToResultWithDays(productsDayZero, productStatesInDays);
 
-            assert.deepStrictEqual(JSON.parse(result), rawString2Products2DaysJSON);
+            assert.deepStrictEqual(result, rawString2Products2DaysJSON);
         });
     });
 
