@@ -1,24 +1,5 @@
 function formatToRawString(productsDayZero, productStatesInDays) {
-
-    const nProductsByDay = productsDayZero.length;
-    const nDays = productStatesInDays.length / nProductsByDay;
-
-    let result = 'OMGHAI!\r\n';
-
-    const allProducts = [...productsDayZero, ...productStatesInDays];
-
-
-    for (let i = 0; i <= nDays; i++) {
-        const productsAtDayI = allProducts.slice(i * nProductsByDay, i * nProductsByDay + nProductsByDay);
-
-        result += `-------- day ${i} --------\r\n`;
-        result += `name, sellIn, price\r\n`;
-        productsAtDayI.forEach(product => {
-            result += `${product.name}, ${product.sellIn}, ${product.price}\r\n`;
-        });
-        result += '\r\n';
-    }
-
+    const result = buildResultOutput(productsDayZero, productStatesInDays);
 
     return result;
 }
@@ -79,5 +60,36 @@ function formatToResultWithDays(productsDayZero, productStatesInDays) {
 }
 
 
+function outputResultsByConsole(productsDayZero, productStatesInDays) {
+    
+    const result = buildResultOutput(productsDayZero, productStatesInDays);
 
-module.exports = { formatToRawString, formatToResultWithDays };
+    console.log(result);
+}
+
+function buildResultOutput(productsDayZero, productStatesInDays){
+    const nProductsByDay = productsDayZero.length;
+    const nDays = productStatesInDays.length / nProductsByDay;
+
+    let result = 'OMGHAI!\r\n';
+
+    const allProducts = [...productsDayZero, ...productStatesInDays];
+
+
+    for (let i = 0; i <= nDays; i++) {
+        const productsAtDayI = allProducts.slice(i * nProductsByDay, i * nProductsByDay + nProductsByDay);
+
+        result += `-------- day ${i} --------\r\n`;
+        result += `name, sellIn, price\r\n`;
+        productsAtDayI.forEach(product => {
+            result += `${product.name}, ${product.sellIn}, ${product.price}\r\n`;
+        });
+        result += '\r\n';
+    }
+
+    return result;
+}
+
+
+
+module.exports = { formatToRawString, formatToResultWithDays, outputResultsByConsole };

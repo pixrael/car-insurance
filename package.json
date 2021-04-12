@@ -4,8 +4,9 @@
   "description": "Server that calculates the price of products depending on types and days",
   "main": "server.js",
   "scripts": {
-    "test": "mocha test/**/*.js",
-    "runDev": "nodemon server.js"
+    "test": "nyc mocha test/**/*.js",
+    "runDev": "nodemon server.js",
+    "after-30-days": "set RUN_DEFAULT=true && nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
