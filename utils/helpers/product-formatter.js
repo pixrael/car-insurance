@@ -14,7 +14,7 @@ function formatToRawString(productsDayZero, productStatesInDays) {
         result += `-------- day ${i} --------\r\n`;
         result += `name, sellIn, price\r\n`;
         productsAtDayI.forEach(product => {
-            result += `${product.name}, ${product.sellIn}, ${product.price}\r\n`;            
+            result += `${product.name}, ${product.sellIn}, ${product.price}\r\n`;
         });
         result += '\r\n';
     }
@@ -23,4 +23,61 @@ function formatToRawString(productsDayZero, productStatesInDays) {
     return result;
 }
 
-module.exports = { formatToRawString };
+function formatToJson(productsDayZero, productStatesInDays) {
+
+    const result = {
+        title: 'OMGHAI!',
+        products: [
+            {
+                day: '',
+                name: '----day 0----',
+                sellIn: '',
+                price: ''
+            }
+        ]
+    };
+
+    productsDayZero.forEach(product => {
+        result.products.push({
+            day: '0',
+            name: product.name,
+            sellIn: '' + product.sellIn,
+            price: '' + product.price
+        });
+    });
+
+    const nProductsByDay = productsDayZero.length;
+    const totalDays = productStatesInDays.length / nProductsByDay;
+
+
+    let iProduct = 0;
+    for (let i = 1; i <= totalDays; i++) {
+
+        result.products.push({
+            day: '',
+            name: `----day ${i}----`,
+            sellIn: '',
+            price: ''
+        });
+
+        for (let j = 0; j < nProductsByDay; j++) {
+
+            const product = productStatesInDays[iProduct];
+            result.products.push({
+                day: '' + i,
+                name: product.name,
+                sellIn: '' + product.sellIn,
+                price: '' + product.price
+            });
+
+            iProduct++;
+        }
+
+    }
+
+    return JSON.stringify(result);
+}
+
+
+
+module.exports = { formatToRawString, formatToJson };

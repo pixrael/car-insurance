@@ -1,0 +1,59 @@
+{
+    "title": "OMGHAI!",
+    "products": [
+        {
+            "day": "",
+            "name": "----day 0----",
+            "sellIn": "",
+            "price": ""
+        },
+        {
+            "day": "0",
+            "name": "Medium Coverage",
+            "sellIn": "10",
+            "price": "20"
+        },
+        {
+            "day": "0",
+            "name": "Full Coverage",
+            "sellIn": "2",
+            "price": "0"
+        },
+        {
+            "day": "",
+            "name": "----day 1----",
+            "sellIn": "",
+            "price": ""
+        },
+        {
+            "day": "1",
+            "name": "Medium Coverage",
+            "sellIn": "9",
+            "price": "19"
+        },
+        {
+            "day": "1",
+            "name": "Full Coverage",
+            "sellIn": "1",
+            "price": "1"
+        },
+        {
+            "day": "",
+            "name": "----day 2----",
+            "sellIn": "",
+            "price": ""
+        },
+        {
+            "day": "2",
+            "name": "Medium Coverage",
+            "sellIn": "8",
+            "price": "18"
+        },
+        {
+            "day": "2",
+            "name": "Full Coverage",
+            "sellIn": "0",
+            "price": "2"
+        }
+    ]
+}
